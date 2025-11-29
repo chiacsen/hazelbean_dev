@@ -24,7 +24,7 @@ def main():
     
     # Try to find sample data for processing
     try:
-        input_path = p.get_path('tests/ee_r264_ids_900sec.tif')
+        input_path = p.get_path('cartographic/tests/ee_r264_ids_10sec.tif')#modified from 900sec to 10sec 
         if hb.path_exists(input_path):
             has_sample_data = True
             print(f"✓ Using sample raster: {os.path.basename(input_path)}")

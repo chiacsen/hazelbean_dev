@@ -1,0 +1,6 @@
+Spatial Analysis Summary
+========================
+Input shape: (100, 100)
+Value range: 10.81 to 189.88
+Mean: 107.33
+Hot spots: 9 pixels
