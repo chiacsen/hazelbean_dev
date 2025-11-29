@@ -26,7 +26,7 @@ def main():
     
     # Try to find multiple sample rasters for analysis
     raster_paths = []
-    for filename in ['tests/ee_r264_ids_900sec.tif', 'pyramids/ha_per_cell_900sec.tif']:
+    for filename in ['cartographic/tests/ee_r264_ids_10sec.tif', 'pyramids/ha_per_cell_900sec.tif']:
         try:
             path = p.get_path(filename)
             if hb.path_exists(path):

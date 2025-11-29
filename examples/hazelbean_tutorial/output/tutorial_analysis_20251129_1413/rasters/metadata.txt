@@ -1,0 +1,11 @@
+Raster Metadata
+===============
+Analysis date: 2025-11-29 14:13:14
+Results shape: (50, 50)
+Results range: 0.04 to 99.99
+Classification classes: [np.int64(1), np.int64(2), np.int64(3)]
+
+Class definitions:
+1 = Low values
+2 = Medium values
+3 = High values
