@@ -1,0 +1,37 @@
+Temperature Analysis Statistics
+============================================================
+
+Overall Mean: 19.99°C
+Overall Std Dev: 9.99°C
+
+Zone-Based Analysis:
+------------------------------------------------------------
+
+Cold Zone (Class 1):
+  Mean: 8.59°C
+  Min: -32.05°C
+  Max: 15.00°C
+  Std Dev: 5.18°C
+  Pixel Count: 319,720
+
+Moderate Zone (Class 2):
+  Mean: 20.00°C
+  Min: 15.00°C
+  Max: 25.00°C
+  Std Dev: 2.84°C
+  Pixel Count: 398,193
+
+Hot Zone (Class 3):
+  Mean: 31.40°C
+  Min: 25.00°C
+  Max: 68.40°C
+  Std Dev: 5.19°C
+  Pixel Count: 318,887
+
+============================================================
+
+Output Files:
+- Temperature raster: temperature_data.tif
+- Zone classification: heat_zones.tif
+- Mean temp by zone: mean_temp_by_zone.tif
+- This report: statistics.txt
