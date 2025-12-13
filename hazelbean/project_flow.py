@@ -363,7 +363,7 @@ class ProjectFlow(object):
         self.task_names_defined = [] # Store a list of tasks defined somewhere in the target script. For convenience, e.g., when setting runtime conditionals based on function names existence.
 
         # TODO FIX get rid of inputs dir, but it's used a lot, including in putting scenarios.csv files in the right place.... er. The Python ecosystem overwhelmingly prefers singular names for a type of directory* and plural only when the directory itself contains many heterogeneous items.
-        self.inputs_dir = getattr(self, 'inputs_dir', os.path.join(self.project_dir, 'inputs'))
+        self.inputs_dir = getattr(self, 'inputs_dir', os.path.join(self.project_dir, 'input'))
         self.input_dir = getattr(self, 'input_dir', os.path.join(self.project_dir, 'input'))
         self.intermediate_dir = getattr(self, 'intermediate_dir', os.path.join(self.project_dir, 'intermediate'))
         self.output_dir = getattr(self, 'output_dir', os.path.join(self.project_dir, 'output'))
@@ -391,8 +391,8 @@ class ProjectFlow(object):
             raise NotADirectoryError('A Project Flow object is based on defining a project_dir as its base, but we were unable to create the dir at the given path: ' + self.project_dir)
 
         # BIG ASS-MISTAKE here, repeating inputs
-        self.input_dir = os.path.join(self.project_dir, 'inputs')
-        self.inputs_dir = os.path.join(self.project_dir, 'inputs')
+        self.input_dir = os.path.join(self.project_dir, 'input')
+        self.inputs_dir = os.path.join(self.project_dir, 'input')
         self.intermediate_dir = os.path.join(self.project_dir, 'intermediate')
         self.output_dir = os.path.join(self.project_dir, 'outputs')
         
